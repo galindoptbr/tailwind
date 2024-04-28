@@ -6,23 +6,24 @@ import IconUser from "@/assets/icon-user.svg";
 
 import { ItemMenu } from "./ItemMenu";
 import { SearchMenu } from "./SearchMenu";
+import { Container } from "./Container";
 
 export const Header = () => {
   return (
     <header className="relative flex items-center w-full h-20 bg-primary-orange">
-      <div className="flex items-center justify-between w-full max-w-[1246px] px-[15px] mx-auto">
+      <Container>
         <div className="flex flex-1 item justify-between">
           <div className="flex items-center gap-14">
             <Image src={Logo} alt="Logo" />
             <ul className="flex items-center gap-12">
               <li>
-                <ItemMenu name={"Para voce"} />
+                <ItemMenu name={"Para você"} />
               </li>
               <li>
                 <ItemMenu name={"Para Empresas"} />
               </li>
               <li>
-                <ItemMenu name={"Servicos"} />
+                <ItemMenu name={"Serviços"} />
               </li>
               <li>
                 <ItemMenu name={"Ajuda"} />
@@ -37,7 +38,7 @@ export const Header = () => {
           <Image src={IconUser} alt="icon user"/>
           <span className="text-white font-bold">Acessar Conta</span>
         </button>
-      </div>
+      </Container>
     </header>
   );
 };
