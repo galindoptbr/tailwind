@@ -1,8 +1,11 @@
 import { SectionHero } from "@/components/SectionHero";
-import Image from "next/image";
+import { SectionsServices } from "@/components/SectionsServices";
 
 export default function Home() {
   return (
-    <SectionHero />
+    <>
+      <SectionHero />
+      <SectionsServices />
+    </>
   );
 }
